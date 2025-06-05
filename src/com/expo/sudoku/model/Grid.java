@@ -1,5 +1,7 @@
 package com.expo.sudoku.model;
 
+import java.util.Arrays;
+
 public class Grid {
 
     private static final int SIZE = 9;
@@ -45,6 +47,12 @@ public class Grid {
             }
         }
         return true;
+    }
+
+    private boolean isValidInCol(int col, int value) {
+        return Arrays.stream(cells) {
+            .noneMatch(rowCells -> rowCells[col].value() == value);
+        }
     }
 
     public boolean isComplete() {
