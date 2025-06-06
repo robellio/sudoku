@@ -5,4 +5,5 @@ module sudoku {
     exports com.expo.sudoku.model;
     exports com.expo.sudoku.solver;
     exports com.expo.sudoku.ui;
+    exports com.expo.sudoku.enums;
 }

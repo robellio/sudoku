@@ -1,14 +1,16 @@
 package com.expo.sudoku.ui;
 
-import com.expo.sudoku.model.Cell;
 import com.expo.sudoku.model.Grid;
+import com.expo.sudoku.model.Cell;
+
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-public class SudokuPanel {
+
+public class SudokuPanel extends JPanel{
 
     private static final int SIZE = 9;
     private static final int CELL_SIZE = 60;
@@ -41,13 +43,13 @@ public class SudokuPanel {
         }
 
         textField.setEditable(cell.isEditable());
-        textField.setBackground(cell.isEditable() ? color.WHITE : Color.LIGHT_GRAY);
+        textField.setBackground(cell.isEditable() ? Color.WHITE : Color.LIGHT_GRAY);
 
         if (cell.value() != 0) {
             textField.setText(String.valueOf(cell.value()));
         }
         textField.setEditable(cell.isEditable());
-        textField.setBackground(cell.isEditabale() ? Color.WHITE : Color.LIGHT_GRAY);
+        textField.setBackground(cell.isEditable() ? Color.WHITE : Color.LIGHT_GRAY);
 
         if (cell.isEditable()) {
             textField.addKeyListener(new KeyAdapter() {

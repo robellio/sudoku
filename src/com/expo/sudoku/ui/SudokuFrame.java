@@ -1,6 +1,7 @@
 package com.expo.sudoku.ui;
 
 import com.expo.sudoku.enums.Difficulty;
+import com.expo.sudoku.model.Grid;
 import com.expo.sudoku.generator.SudokuGenerator;
 
 import javax.swing.*;

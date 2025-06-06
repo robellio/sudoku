@@ -1,6 +1,8 @@
 package com.expo.sudoku.generator;
 
 import com.expo.sudoku.enums.Difficulty;
+import com.expo.sudoku.model.Grid;
+import com.expo.sudoku.solver.SudokuSolver;
 
 import java.util.Arrays;
 import java.util.random.RandomGenerator;
